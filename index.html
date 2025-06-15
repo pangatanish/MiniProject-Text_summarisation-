@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <script defer src="{{ url_for('static', filename='script1.js') }}"></script> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   <link rel="stylesheet" href="{{url_for('static',filename='node_modules/bootstrap-icons/font/bootstrap-icons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='node_modules/bootstrap-icons/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='node_modules/bootstrap/dist/css/bootstrap.css')}}">
+</head>
+<body> 
+    <header class="head"> 
+        <span class="bi bi-list"></span>
+        <span>
+            <img src="{{ url_for('static', filename='images/icon2.png') }}" alt="">
+            <span class="logo-title">AI Summarizer</span>
+        </span>
+        <span class="btn-logo">
+            <button type="button" class="btn btn-outline-primary login">Login</button>
+            <button type="button" class="btn btn-outline-primary signup">Sign Up</button>
+        </span>
+    </header>
+    <h1>Text Summarizer</h1>
+    <main class="text-summarizer">
+        <div class="text-content">
+
+            <div class="modes">
+                <div class="range" >
+                    <label for="range" class="label">Select Length:</label>
+                    <input type="range" id="input-range" class="form-range" name="range" min="50" max="250" step="50" style="width: 250px;">
+                    <span id="length" style="display:inline-block;width:200px ; margin-left: 10px;"></span>
+                </div>
+                <div class="form-check form-switch d-flex justify-content-center align-items-center" style="gap: 10px; padding: 10px;">
+                    <input class="form-check-input mt-3" type="checkbox" id="BulletPoint" style="font-size: 18px;" onchange="changeColor()">
+                    <label class="form-check-label mt-2 " id="formLabel" for="BulletPoint" style="font-size: 17px;font-weight: bold;">Display as Bullet Points</label>
+                  </div>
+            </div>
+            <div class="text-input">
+                
+                <textarea id="inputText" placeholder="Enter text to summarize..." style="resize: none;"></textarea>
+                
+                <div id="outputText">The summary will appear here...
+                  
+                    
+                </div>
+              <div class="loader-box">
+                  <div class="loader" id="load"></div>
+
+              </div>
+            </div>
+            <div class="summarize-btn">
+                <div class="input-word-count">
+                    <label for="input-count">Words:</label>
+                    <span id="input-count"></span>
+                    <input type="file" id="fileInput" class="form-control" accept=".pdf,.docx,.txt" onchange="disableText()">
+                </div>
+               
+                <button id="summarizeButton">Summarize</button>
+                <div class="output-word-count">
+                    <label for="output-count">Words:</label>
+                    <span id="output-count"></span>
+                </div>
+
+        </div>
+        <div class="foot"></div>
+    </div>
+        </main>
+
+</body>
+</html>
