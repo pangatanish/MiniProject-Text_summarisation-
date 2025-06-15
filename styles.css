@@ -1,0 +1,237 @@
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 120px;
+}
+.bi-list{
+    font-size: 50px;
+    padding: 15px 20px;
+}
+.head:nth-child(1) span{
+    font-size: 30px;
+    font-weight: 500;
+}
+.btn-logo{
+    padding: 15px 25px;
+}
+.ai-content h1{
+    text-align: center;
+    padding: 20px;
+}
+.ai-content p{
+   text-align: center;
+   font-size: 19px;
+   font-weight: 500;
+}
+.getstarted a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    background-color: blue;
+    cursor: pointer;
+}
+.getstarted{
+    text-align: center;
+    padding: 20px 20px ;
+    margin-bottom: 30px;
+}
+.ai-image img{
+    width: 500px;
+    height: 370px;
+}
+.ai-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    width: 93%;
+    padding: 0px 30px 0px 30px;
+}
+.content{
+    padding: 15px 30px;
+}
+.ai{
+    background-color: #e8f2fc;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.summ-data{
+   padding: 30px 20px 30px 20px;
+   margin-top:30px ;
+}
+.summ-data h1{
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.summ-data .info{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 19px;
+    text-align: center;
+}
+.advant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.advant-boxes{
+    width: 75%;
+    height: 230px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    gap: 15px;
+}
+.adv-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.adv-box svg{
+    width: 80px;
+    padding: 5px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+.adv-box h3{
+    font-size: 26px;
+    margin-left: 25px;
+}
+.adv-box span{
+    margin-left: 25px;
+    font-size: 18px;
+}
+.box1{
+    border-left: 1px solid green;
+    border-radius: 11px;
+    box-shadow: 1px 1px 3px green;
+}
+
+.box2{
+    border-left: 1px solid maroon;
+    border-radius: 11px;
+    box-shadow: 1px 1px 3px maroon;
+}
+.box3{
+    border-left: 1px solid goldenrod;
+    border-radius: 11px;
+    box-shadow: 1px 1px 3px goldenrod;
+}
+.box4{
+    border-left: 1px solid rgb(72, 9, 208);
+     border-radius: 11px;
+    box-shadow: 1px 1px 3px rgb(72, 9, 208);
+}
+.summ-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+ .summ-user h1{
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin: 40px 0px 30px 0px;
+ }
+.user-boxes{
+    width: 73%;
+    height: 230px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+.user-box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.user-box svg{
+    width: 70px;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.user-box h3{
+    margin-top: 20px;
+    font-size: 26px;
+    margin-left: 25px;
+}
+.user-box p{
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 19px;
+}
+.user1{
+    background-color:lavender;
+    box-shadow: 2px 2px 3px gray;
+}
+.user2{
+    box-shadow: 2px 2px 3px gray;
+    background-color:blanchedalmond;
+}
+.user3{
+    box-shadow: 2px 2px 3px gray;
+    background-color:rgb(215, 255, 146) ;
+}
+.user4{
+    box-shadow: 2px 2px 3px gray;
+    background-color:khaki;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+.work-boxes{
+    margin-top: 30px;
+    width: 75%;
+    height: 230px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    gap: 15px;
+}
+.work-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-left:1px solid green;
+    margin-top: 30px;
+}
+.work-box svg{
+    width: 70px;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.work-box h3{
+    margin-top: 15px;
+    font-size: 26px;
+    margin-left: 25px;
+}
+.work-box span{
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 19px;
+}
